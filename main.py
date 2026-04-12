@@ -109,19 +109,18 @@ if mode == "Recipe Directory":
     st.subheader("Recipe Directory")
 
     category = st.selectbox(
-        "Select a category",
-        ["all"] + validCats
-    )
+    "Select a category",
+    ["ALL"] + [c.upper() for c in validCats]
+)
 
-    st.divider()
+if category.lower() == "all":
+    for recipe in sorted(recipes):
+        st.write(recipe.title())
+else:
+    filtered = [r for r in recipes if recipes[r]["category"] == category.lower()]
 
-    if category == "all":
-        for recipe in recipes:
-            st.write(recipe.title())
-    else:
-        for recipe in recipes:
-            if recipes[recipe]["category"] == category:
-                st.write(recipe.title())
+    for recipe in sorted(filtered):
+        st.write(recipe.title())
 
 # ---- CALCULATOR ----
 else:
@@ -188,5 +187,5 @@ else:
             st.divider()
             st.subheader("Final Grocery List")
 
-            for ingredient, amount in shoppingList.items():
+            for sorted(ingredient), amount in shoppingList.items():
                 st.write(f"{ingredient}: {amount}")
