@@ -3,7 +3,7 @@
 #======================================
 
 recipes = {
-    "susan's soothin'": {
+    "susans soothin": {
         "category": "big bloom",
         "ingredients":
             {
@@ -303,7 +303,7 @@ recipes = {
             }
     },
 
-    "granny's tea": {
+    "grannys tea": {
         "category": "drinks",
         "ingredients":
             {
@@ -1039,7 +1039,7 @@ recipes = {
             }
     },
 
-    "s'mores": {
+    "smores": {
         "category": "food",
         "ingredients":
             {
@@ -1313,7 +1313,7 @@ recipes = {
             }
     },
 
-    "chally's feed": {
+    "challys feed": {
         "category": "food",
         "ingredients":
             {
@@ -1817,7 +1817,7 @@ recipes = {
             }
     },
 
-    "headhunter's headcheese": {
+    "headhunters headcheese": {
         "category": "more food",
         "ingredients":
             {
