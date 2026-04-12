@@ -123,7 +123,7 @@ else:
         st.write(recipe.title())
 
 # ---- CALCULATOR ----
-else:
+
 
     st.subheader("Crafting Calculator")
 
